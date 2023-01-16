@@ -6,6 +6,21 @@
 body {
   font-family: "Inter", sans-serif;
 }
+/* color teuory */
+/* 
+  . primery color: #0DB760   <- green varient
+  . secoundry color: #000000  <- black varient
+  . optional color: #FF0000     <- red varient
+  . white color: #ffffff          <- white varient
+  . uses color: #FE8B75             <- pink varient
+*/
+
+/* typeography */
+/* 
+  .inter: regular
+  .inter: medium
+  .inter: bold
+*/
 
 @tailwind base;
 @tailwind components;

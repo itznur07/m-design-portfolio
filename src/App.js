@@ -1,9 +1,13 @@
-function App() {
+import Home from "./Pages/Home";
+
+const App = () => {
   return (
-    <div className="text-red-700 text-3xl">
-      M-Design
-    </div>
+    <>
+      <div className='mx-28'>
+        <Home/>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
