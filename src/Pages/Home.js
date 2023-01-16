@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../Components/Banner";
 import Navbar from "../Components/Navbar";
 import Rewards from "../Components/Rewards";
+import Skills from "../Components/Skills";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Rewards />
+      <Skills />
     </>
   );
 };
