@@ -4,6 +4,7 @@ import Button from "./Button";
 // import img & icons
 import { FaCode, FaFigma, FaReact } from "react-icons/fa";
 import dotsr from '../assets/img/dots-r.png';
+import TagButton from "./TagButton";
 
 
 const Skills = () => {
@@ -14,7 +15,7 @@ const Skills = () => {
     </div>
       <div className='flex items-center justify-between gap-28 h-96'>
         <div className='flex flex-col gap-6'>
-          <p className='text-md text-[#0db760] font-medium'>My Skills</p>
+          <TagButton name="Skills" />
           <p className='text-4xl font-bold leading-snug'>
             Why Hire Me For Your <br />
             Next <span className='text-[#0db760]'>Project?</span>

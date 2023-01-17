@@ -5,13 +5,14 @@ import { FaStar } from "react-icons/fa";
 import p1 from "../assets/img/men1.png";
 import p2 from "../assets/img/men2.png";
 import p3 from "../assets/img/men3.png";
+import TagButton from "./TagButton";
 
 const Reviews = () => {
   return (
     <>
       <div className='flex flex-col gap-10 h-96 mt-32'>
         <div className='flex flex-col gap-6'>
-          <p className='text-md text-[#0db760] font-medium'>Reviews</p>
+          <TagButton name="Reviews" />
           <p className='text-4xl font-bold leading-snug'>
             Our Customer Say
             <br />

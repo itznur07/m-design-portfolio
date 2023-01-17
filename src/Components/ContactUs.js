@@ -4,12 +4,13 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaSearchLocation } from "react-icons/fa";
+import TagButton from "./TagButton";
 
 const ContactUs = () => {
   return (
     <div className='h-96 mt-32'>
       <div className='flex flex-col gap-6 items-center'>
-        <p className='text-md text-[#0db760] font-medium'>Contact</p>
+        <TagButton name="Contact" />
         <p className='text-4xl font-bold leading-snug'>
           Let’s Discuss Your <span className='text-[#0db760]'>Project</span>
         </p>
