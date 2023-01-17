@@ -11,14 +11,16 @@ import Skills from "../Components/Skills";
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Banner />
-      <Rewards />
-      <Skills />
-      <Portfolio />
-      <Reviews />
-      <ContactUs />
-      <Footer />
+      <div className='mx-28'>
+        <Navbar />
+        <Banner />
+        <Rewards />
+        <Skills />
+        <Portfolio />
+        <Reviews />
+        <ContactUs />
+        <Footer />
+      </div>
     </>
   );
 };

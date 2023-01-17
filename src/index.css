@@ -6,6 +6,17 @@
 body {
   font-family: "Inter", sans-serif;
 }
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #0db760;
+  transform-origin: 0%;
+  z-index: 50;
+}
+
 /* color teuory */
 /* 
   . primery color: #0DB760   <- green varient

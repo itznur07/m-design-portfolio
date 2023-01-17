@@ -1,11 +1,19 @@
+import { motion, useScroll, useSpring } from "framer-motion";
 import Home from "./Pages/Home";
 
 const App = () => {
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
     <>
-      <div className='mx-28'>
-        <Home/>
-      </div>
+      <motion.div style={{ scaleX }} className='progress-bar'/>
+        <Home />
     </>
   );
 };
