@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../Components/Banner";
-import Contact from "../Components/Contact";
+import ContactUs from "../Components/ContactUs";
 import Navbar from "../Components/Navbar";
 import Portfolio from "../Components/Portfolio";
 import Reviews from "../Components/Reviews";
@@ -16,7 +16,7 @@ const Home = () => {
       <Skills />
       <Portfolio />
       <Reviews />
-      <Contact />
+      <ContactUs />
     </>
   );
 };

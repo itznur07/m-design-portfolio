@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaSearchLocation } from "react-icons/fa";
 
-const Contact = () => {
+const ContactUs = () => {
   return (
     <div className='h-96 mt-32'>
       <div className='flex flex-col gap-6 items-center'>
@@ -102,4 +102,4 @@ const Input = ({ placeholder }) => {
   );
 };
 
-export default Contact;
+export default ContactUs;
