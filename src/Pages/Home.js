@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../Components/Banner";
 import ContactUs from "../Components/ContactUs";
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Portfolio from "../Components/Portfolio";
 import Reviews from "../Components/Reviews";
@@ -17,6 +18,7 @@ const Home = () => {
       <Portfolio />
       <Reviews />
       <ContactUs />
+      <Footer />
     </>
   );
 };
