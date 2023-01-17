@@ -1,12 +1,17 @@
 import React from "react";
 import Button from "./Button";
 
-// import icons
+// import img & icons
 import { FaCode, FaFigma, FaReact } from "react-icons/fa";
+import dotsr from '../assets/img/dots-r.png';
+
 
 const Skills = () => {
   return (
     <>
+    <div className="absolute top-4/5 right-0">
+      <img src={dotsr} alt="site-dots-img" />
+    </div>
       <div className='flex items-center justify-between gap-28 h-96'>
         <div className='flex flex-col gap-6'>
           <p className='text-md text-[#0db760] font-medium'>My Skills</p>
