@@ -4,6 +4,7 @@ import Button from "./Button";
 // import img & icons
 import { FaCode, FaFigma, FaReact } from "react-icons/fa";
 import dotsr from '../assets/img/dots-r.png';
+import CompMention from "./CompMention";
 import TagButton from "./TagButton";
 
 
@@ -15,17 +16,14 @@ const Skills = () => {
     </div>
       <div className='flex items-center justify-between gap-28 h-96'>
         <div className='flex flex-col gap-6'>
-          <TagButton name="Skills" />
-          <p className='text-4xl font-bold leading-snug'>
-            Why Hire Me For Your <br />
-            Next <span className='text-[#0db760]'>Project?</span>
-          </p>
-          <p className='text-[#000] text-sm'>
-            I’m specialist in UI/UX Designe. My passion is designing  & solving{" "} problems through user <br /> experience and research.
-          </p>
-          <div className='cursor-pointer'>
-            <Button name='Contact me' />
-          </div>
+        <CompMention
+            tbtn={<TagButton name='Skills' />}
+            t1='Why Hire Me For Your'
+            t2='Next Project?'
+            t3='I’m specialist in UI/UX Designe. My passion is designing & solving problems through user
+        experience and research.'
+            btn={<Button name='Hire me' />}
+          />
         </div>
         <div className='flex items-center gap-8'>
           <div className='flex flex-col items-center gap-16'>

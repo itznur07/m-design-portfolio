@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa";
 import p1 from "../assets/img/men1.png";
 import p2 from "../assets/img/men2.png";
 import p3 from "../assets/img/men3.png";
+import CompMention from "./CompMention";
 import TagButton from "./TagButton";
 
 const Reviews = () => {
@@ -12,12 +13,11 @@ const Reviews = () => {
     <>
       <div className='flex flex-col gap-10 h-96 mt-32'>
         <div className='flex flex-col gap-6'>
-          <TagButton name="Reviews" />
-          <p className='text-4xl font-bold leading-snug'>
-            Our Customer Say
-            <br />
-            Something <span className='text-[#0db760]'>About Us</span>
-          </p>
+          <CompMention
+            tbtn={<TagButton name='Reviews' />}
+            t1='Our Customer Say'
+            t2='Something About Us'
+          />
         </div>
         <div className='flex items-center justify-between gap-5'>
           <ReviewCard

@@ -4,23 +4,21 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import { FaSearchLocation } from "react-icons/fa";
+import CompMention from "./CompMention";
 import TagButton from "./TagButton";
 
 const ContactUs = () => {
   return (
     <div className='h-96 mt-32'>
-      <div className='flex flex-col gap-6 items-center'>
-        <TagButton name="Contact" />
-        <p className='text-4xl font-bold leading-snug'>
-          Let’s Discuss Your <span className='text-[#0db760]'>Project</span>
-        </p>
-        <p className='text-[#000] text-sm text-center'>
-          Let’s make something new, different and more meaningful or make <br />{" "}
-          thing more visual or conceptual
-        </p>
-      </div>
+      <CompMention
+        tbtn={<TagButton name='Contact' />}
+        t1='Let’s Discuss Your'
+        t2='Project'
+        t3='Let’s make something new, different and more meaningful or make
+        thing more visual or conceptual'
+      />
       {/* form */}
-      <div className='h-96 mt-24 flex justify-around items-center'>
+      <div className='h-96 mt-20 flex justify-between items-center'>
         {/* left */}
         <div className='flex flex-col gap-10'>
           <InfoCard
