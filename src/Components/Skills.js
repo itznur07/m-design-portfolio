@@ -55,7 +55,7 @@ const Skills = () => {
 const Card = ({ icon, title, about }) => {
   return (
     <>
-      <div className='flex flex-col gap-2 shadow-md px-5 py-4 rounded-sm'>
+      <div className='flex flex-col gap-2 shadow-md hover:shadow-lg px-5 py-4 rounded-sm'>
         <i className='text-xl text-[#0db760]'>{icon}</i>
         <p className='text-md font-medium'>{title}</p>
         <p className='text-sm'>{about}</p>
