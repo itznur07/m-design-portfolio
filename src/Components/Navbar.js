@@ -1,15 +1,24 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React, { useContext } from "react";
+import { MotionContext } from "../MotinContext";
 
 // import logo
 import logo from "../assets/img/Logo.png";
 
 const Navbar = () => {
+  const { container, item2, item3 } = useContext(MotionContext);
+
   return (
     <>
-      <div className='flex items-center justify-between py-7'>
-        <div>
+      <motion.div
+        variants={container}
+        initial='hidden'
+        animate='visible'
+        className='flex items-center justify-between py-7'
+      >
+        <motion.div variants={item3}>
           <img className='w-36' src={logo} alt='logo' />
-        </div>
+        </motion.div>
         <div>
           <nav>
             <ul className='flex items-center gap-16 text-md text-[#000] font-medium cursor-pointer'>
@@ -20,12 +29,12 @@ const Navbar = () => {
             </ul>
           </nav>
         </div>
-        <div className='w-32 h-11 flex justify-center items-center border border-[#0DB760] rounded-md'>
+        <motion.div variants={item2} className='w-32 h-11 flex justify-center items-center border border-[#0DB760] rounded-md'>
           <span className='text-md text-[#000] font-medium cursor-pointer'>
             Download
           </span>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };

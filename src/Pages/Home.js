@@ -39,11 +39,19 @@ const item2 = {
   },
 };
 
+const item3 = {
+  hidden: { x: -20, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
+
 const Home = () => {
   return (
     <>
       <div className='mx-28'>
-        <MotionContext.Provider value={{container, item, item2}}>
+        <MotionContext.Provider value={{container, item, item2, item3}}>
         <Navbar />
         <Banner />
         <Rewards />
