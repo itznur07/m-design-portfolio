@@ -8,12 +8,42 @@ import Reviews from "../Components/Reviews";
 import Rewards from "../Components/Rewards";
 import ScrollToTopButton from "../Components/ScrollToTop";
 import Skills from "../Components/Skills";
+import { MotionContext } from "../MotinContext";
 
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.5,
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+const item2 = {
+  hidden: { x: 20, opacity: 0 },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
 
 const Home = () => {
   return (
     <>
       <div className='mx-28'>
+        <MotionContext.Provider value={{container, item, item2}}>
         <Navbar />
         <Banner />
         <Rewards />
@@ -22,6 +52,7 @@ const Home = () => {
         <Reviews />
         <ContactUs />
         <Footer />
+        </MotionContext.Provider>
         <ScrollToTopButton />
       </div>
     </>

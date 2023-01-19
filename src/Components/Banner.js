@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useContext } from "react";
+import { MotionContext } from "../MotinContext";
 
 // import image
 import bgImg from "../assets/img/bg1.png";
@@ -11,35 +12,11 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Button from "./Button";
 import TagButton from "./TagButton";
 
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.5,
-      staggerChildren: 0.3,
-    },
-  },
-};
-
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
-const item2 = {
-  hidden: { x: 20, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
 
 const Banner = () => {
+
+  const {container, item, item2} = useContext(MotionContext)
+  
   return (
     <>
       <div className='absolute top-24 left-10 w-1/4 -z-10'>
