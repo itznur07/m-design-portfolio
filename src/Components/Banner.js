@@ -19,7 +19,7 @@ const Banner = () => {
   
   return (
     <>
-      <div className='absolute top-24 left-10 w-1/4 -z-10'>
+      <div className='absolute top-24 left-10 w-1/4 -z-10 animate-pulse'>
         <img src={bgdots} alt='bg-dots' />
       </div>
       <div className='flex items-center justify-between'>
@@ -65,17 +65,17 @@ const Banner = () => {
           animate='visible'
           className='flex items-center'
         >
-          <motion.div variants={item2}>
+          <motion.div variants={item2} className="animate-pulse">
             <img src={bgImg} alt='banner-img' />
           </motion.div>
-          <div className='flex items-center flex-col gap-16 text-md text-[#0db760]'>
+          <div className='flex items-center flex-col gap-20 text-md text-[#0db760] '>
             <p className='flex items-center gap-3 transform rotate-90'>
               Follow me
               <span className=''>
                 <AiOutlineLine />{" "}
               </span>
             </p>
-            <div className='flex items-center flex-col gap-5 cursor-pointer'>
+            <div className='flex items-center flex-col gap-5 cursor-pointer animate-bounce'>
               <FaFacebookF />
               <FaInstagram />
               <FaLinkedinIn />
@@ -87,4 +87,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Banner; 

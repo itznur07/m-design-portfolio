@@ -2,7 +2,6 @@ import React from "react";
 import Button from "./Button";
 
 // import img & icons
-import dotsl from "../assets/img/dots-l.png";
 import w1 from "../assets/img/w1.png";
 import w2 from "../assets/img/w2.png";
 import w3 from "../assets/img/w3.png";
@@ -12,9 +11,6 @@ import TagButton from "./TagButton";
 const Portfolio = () => {
   return (
     <>
-      <div className='absolute top-4/5 left-0'>
-        <img src={dotsl} alt='site-dots-img' />
-      </div>
       <div className='flex items-center justify-between gap-16 h-96 mt-32'>
         <div className='flex flex-col gap-6'>
           <CompMention

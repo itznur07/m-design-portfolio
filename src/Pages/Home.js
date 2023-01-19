@@ -10,7 +10,6 @@ import ScrollToTopButton from "../Components/ScrollToTop";
 import Skills from "../Components/Skills";
 import { MotionContext } from "../MotinContext";
 
-
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -50,18 +49,18 @@ const item3 = {
 const Home = () => {
   return (
     <>
-      <div className='mx-28'>
-        <MotionContext.Provider value={{container, item, item2, item3}}>
-        <Navbar />
-        <Banner />
-        <Rewards />
-        <Skills />
-        <Portfolio />
-        <Reviews />
-        <ContactUs />
-        <Footer />
+      <div className='mx-28 relative'>
+        <MotionContext.Provider value={{ container, item, item2, item3 }}>
+          <Navbar />
+          <Banner />
+          <Rewards />
+          <Skills />
+          <Portfolio />
+          <Reviews />
+          <ContactUs />
+          <ScrollToTopButton />
+          <Footer />
         </MotionContext.Provider>
-        <ScrollToTopButton />
       </div>
     </>
   );

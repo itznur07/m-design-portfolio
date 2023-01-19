@@ -3,7 +3,6 @@ import Button from "./Button";
 
 // import img & icons
 import { FaCode, FaFigma, FaReact } from "react-icons/fa";
-import dotsr from '../assets/img/dots-r.png';
 import CompMention from "./CompMention";
 import TagButton from "./TagButton";
 
@@ -11,9 +10,6 @@ import TagButton from "./TagButton";
 const Skills = () => {
   return (
     <>
-    <div className="absolute top-4/5 right-0">
-      <img src={dotsr} alt="site-dots-img" />
-    </div>
       <div className='flex items-center justify-between gap-28 h-96'>
         <div className='flex flex-col gap-6'>
         <CompMention

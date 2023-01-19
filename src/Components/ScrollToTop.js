@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 function ScrollToTopButton() {
   const [visibility, setVisibility] = useState(false);
@@ -24,9 +25,15 @@ function ScrollToTopButton() {
   };
 
   return (
-    <button onClick={handleClick} style={{ visibility: visibility ? "visible" : "hidden" }}>
-      Scroll to Top
-    </button>
+    <div className='absolute bottom-20 right-0 animate-bounce'>
+      <button
+        className='bg-[#0db760] text-[#fff] text-xl rounded-full px-2 py-2'
+        onClick={handleClick}
+        style={{ visibility: visibility ? "visible" : "hidden" }}
+      >
+        <AiOutlineArrowUp />
+      </button>
+    </div>
   );
 }
 
