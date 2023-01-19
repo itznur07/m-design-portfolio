@@ -18,7 +18,7 @@ const ContactUs = () => {
         thing more visual or conceptual'
       />
       {/* form */}
-      <div className='h-96 mt-20 flex justify-between items-center'>
+      <div className='h-96 mt-20 flex justify-between items-center '>
         {/* left */}
         <div className='flex flex-col gap-10'>
           <InfoCard

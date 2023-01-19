@@ -6,7 +6,9 @@ import Navbar from "../Components/Navbar";
 import Portfolio from "../Components/Portfolio";
 import Reviews from "../Components/Reviews";
 import Rewards from "../Components/Rewards";
+import ScrollToTopButton from "../Components/ScrollToTop";
 import Skills from "../Components/Skills";
+
 
 const Home = () => {
   return (
@@ -20,6 +22,7 @@ const Home = () => {
         <Reviews />
         <ContactUs />
         <Footer />
+        <ScrollToTopButton />
       </div>
     </>
   );
